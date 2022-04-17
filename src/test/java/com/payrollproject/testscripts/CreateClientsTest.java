@@ -43,6 +43,7 @@ public class CreateClientsTest extends Base{
 	  String expectedErrorMsg="Branch cannot be blank.";
 	  String actualErrorMsg=createclients.getErrorMsg();
 	  System.out.println(actualErrorMsg);
+	  System.out.println(expectedErrorMsg);
 	  SoftAssert softassert = new SoftAssert();
 	  softassert.assertEquals(actualErrorMsg, expectedErrorMsg, "Failed Error Message");
 	  softassert.assertAll();
