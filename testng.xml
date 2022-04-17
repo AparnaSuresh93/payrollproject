@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+		<listener
+			 class-name="com.payrollproject.listener.TestListener"/>
+	</listeners>
+  <test thread-count="5" name="Output">
+<parameter name="browser" value="chrome" />
+<classes>
+      <class name="com.payrollproject.testscripts.LoginTest"/>
+       <class name="com.payrollproject.testscripts.ResetTest"/>
+       <class name="com.payrollproject.testscripts.HomeTest"/> 
+        <class name="com.payrollproject.testscripts.ClientsTest"/>
+        <class name="com.payrollproject.testscripts.CreateClientsTest"/>
+        <class name="com.payrollproject.testscripts.LogOutTest"/>
+        <class name="com.payrollproject.testscripts.ViewClientTest"/>
+        <class name="com.payrollproject.testscripts.UpdateClientTest"/>
+        <class name="com.payrollproject.testscripts.ViewWorkerTest"/>
+       <class name="com.payrollproject.testscripts.WorkersTest"/>
+    </classes>
+  </test> <!-- Output -->
+</suite> <!-- Suite -->
